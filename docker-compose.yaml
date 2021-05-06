@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+    db:
+        image: mariadb:10.2
+        container_name: sql_db
+        volumes:
+            - "D:\\MySQL_data:/var/lib/mysql" # maps physical device volume to docker's volume
+            - ./docker_configs/db/init.sql:/docker-entrypoint-initdb.d/init.sql # initialises any script in db init in docker
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: password
+        ports:
+            - 3306:3306
+
+volumes:
+    db_data:
+        external: true
