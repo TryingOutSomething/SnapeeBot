@@ -32,6 +32,6 @@ A closer look at commands component
 This proves a rough idea of the communication between scripts and to reduce the need to import unnecessary modules or
 libraries for every script.
 
-A brief explanation of the functionality of each components (May be changed in the future)
+A brief explanation of the functionality of each component
 
 ![Brief overview of scripts](./assets/readme/Brief_overview_script.PNG)
